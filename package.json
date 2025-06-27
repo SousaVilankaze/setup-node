@@ -1,0 +1,33 @@
+{
+  "name": "setup-nodejs",
+  "version": "1.0.0",
+  "description": "CI/CD, Jest e Docker",
+  "keywords": [
+    "nodejs",
+    "express",
+    "demo"
+  ],
+  "homepage": "https://github.com/SousaVilankaze/setup-node#readme",
+  "bugs": {
+    "url": "https://github.com/SousaVilankaze/setup-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SousaVilankaze/setup-node.git"
+  },
+  "license": "ISC",
+  "author": "Sousa Vilankaze (soussfilipe01@gmail.com)",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bin/server.js",
+    "dev": "node bin/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.0.3"
+  }
+}
