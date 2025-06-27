@@ -1,0 +1,12 @@
+
+services:
+  app: 
+    container_name: setup-nodejs
+    image: setup-nodejs:1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 4000:4000
+    environment:
+      - PORT=4000
