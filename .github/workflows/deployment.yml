@@ -17,7 +17,7 @@ jobs:
             - name: Use Node.js ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
-                node-version: ${{matrix.node-version}}
+                node-version: ${{ matrix.node-version }}
             - run: npm ci
             - run: npm run test
 
@@ -33,7 +33,7 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: 20.x
-            - run: docker build -t setup-nodejs
+            - run: docker build -t setup-nodejs .
             - run: echo "Deploy"
     
     deploy-production:
@@ -48,6 +48,6 @@ jobs:
               uses: actions/setup-node@v4
               with:
                 node-version: 20.x
-            - run: docker build -t setup-nodejs
+            - run: docker build -t setup-nodejs .
             - run: echo "Deploy"
 
